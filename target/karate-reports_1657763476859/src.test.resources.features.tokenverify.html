@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <script>
+!function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
+  api_host:'https://app.posthog.com',
+  persistence:'localStorage',
+  autocapture:false,
+  capture_pageview:false,
+  api_transport:'sendBeacon',
+  loaded: function(posthog) { 
+    posthog.identify("c682a9c3-48d3-47ec-a739-7b1e65e49599",{name:"Wally"});
+    posthog.capture("report_feature",{karate_version:"1.2.0",karate_meta:null});
+  }
+});
+</script>
+  
+    <title>src.test.resources.features.tokenverify</title>  
+  </head>
+  <body>   
+    <div id="root-container">
+      <div id="leftnav">
+                
+        <div>
+  <div class="nav-logo">
+    <a href="https://karatelabs.io">
+      <img src="karate-labs-logo-ring.svg" alt="Karate Labs"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">0</div>
+      <div id="nav-fail" class="bg-danger">1</div>
+    </div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>         
+  <div id="nav-date">
+    <div>2022-07-13 09:48:35 PM</div>
+  </div>        
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item failed">
+            <a href="#[1:2]"><span>[1:2]</span> <span>generate token with valid user name and passwsord</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">src/test/resources/features/tokenverify.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">security test. Token generation test</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1:2]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1:2]</span>
+                <span class="scenario-name">generate token with valid user name and passwsord</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>2559</span>
+            </div>
+          </div>
+          
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref passed">4</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url &quot;https://tek-insurance-api.asurewebsites.net&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">158</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref passed">5</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>path &quot;/api/token&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.6">
+      <div class="step-ref passed">6</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request {&quot;username&quot;: &quot;supervisor&quot;, &quot;password&quot;: &quot;tek_supervisor&quot;}</span>
+      </div>
+    </div>
+    <div class="time-cell passed">93</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.7">
+      <div class="step-ref passed">7</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method post</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2308</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.7">21:48:34.939 request:
+1 &gt; POST https://tek-insurance-api.asurewebsites.net/api/token
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 53
+1 &gt; Host: tek-insurance-api.asurewebsites.net
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_311)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;username&quot;:&quot;supervisor&quot;,&quot;password&quot;:&quot;tek_supervisor&quot;}
+
+21:48:35.710 request:
+2 &gt; POST https://tek-insurance-api.asurewebsites.net/api/token
+2 &gt; Content-Type: application/json; charset=UTF-8
+2 &gt; Host: survey-smiles.com
+2 &gt; Connection: Keep-Alive
+2 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_311)
+2 &gt; Cookie: sid=124e0eba-0317-11ed-9bb5-df4e553c134b
+2 &gt; Accept-Encoding: gzip,deflate
+{&quot;username&quot;:&quot;supervisor&quot;,&quot;password&quot;:&quot;tek_supervisor&quot;}
+
+21:48:35.798 request:
+3 &gt; POST https://tek-insurance-api.asurewebsites.net/api/token
+3 &gt; Content-Type: application/json; charset=UTF-8
+3 &gt; Host: blockpg-aloe.safezone.mcafee.com
+3 &gt; Connection: Keep-Alive
+3 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_311)
+3 &gt; Cookie: sid=124e0eba-0317-11ed-9bb5-df4e553c134b
+3 &gt; Accept-Encoding: gzip,deflate
+{&quot;username&quot;:&quot;supervisor&quot;,&quot;password&quot;:&quot;tek_supervisor&quot;}
+
+21:48:35.871 response time in milliseconds: 51
+3 &lt; 200
+3 &lt; Date: Thu, 14 Jul 2022 01:48:34 GMT
+3 &lt; Server: SHP
+3 &lt; X-XSS-Protection: 1; mode=block
+3 &lt; X-Frame-Options: DENY
+3 &lt; Content-Security-Policy: default-src &#39;self&#39; http://shgw.router:8080 stats.g.doubleclick.net www.google-analytics.com analyticsdcs.ccs.mcafee.com *.mcafee.com https://websdk.moengage.com  https://inapps.moengage.com  https://cdn.moengage.com; script-src * &#39;unsafe-inline&#39; &#39;unsafe-eval&#39;; style-src * &#39;unsafe-inline&#39; &#39;unsafe-eval&#39;
+3 &lt; Vary: Accept-Encoding
+3 &lt; Connection: close
+3 &lt; Content-Type: text/html; charset=UTF-8
+3 &lt; Set-Cookie: sid=124e0eba-0317-11ed-9bb5-df4e553c134b; Max-Age=3805246961000; Expires=Sat, 04 Jan 122606 06:31:55 GMT; Domain=asurewebsites.net; Secure
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;SHP Redirector&lt;/title&gt;
+    &lt;meta charset=&quot;UTF-8&quot;&gt;
+    &lt;meta name=&quot;description&quot; content=&quot;SHP Redirector&quot;&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;/blockpage/css/spinner.min.css?v=3.25.1&quot;&gt;
+    &lt;script src=&quot;/blockpage/third-party/jquery-3.6.0.min.js&quot;&gt;&lt;/script&gt;
+    &lt;script type=&quot;text/javascript&quot; src=&quot;http://shgw.router:8080/ids.js&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;/blockpage/js/redirector1.3.js?v=3.25.1&quot;&gt;&lt;/script&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;div id=&quot;settings&quot; client-domain=&quot;http://010d2eac14321a2e34e37d3f878cef591657763314.04df21b61d554d9599d9750d08d7621d.blockpg.shp.safezone.mcafee.com/css/pg.css&quot; ctxt=&quot;Kzd5WVBCL0JWS0lTS0c0YWo4Z1RWQndXbmZ3QWxDZ0h6VHM4NzBYeDhtWktFaU1XUDVDV1dRenBlbkUwQm0xalQraWNHTUwwSHQ5amdFQ3RWQT09&quot; server=&quot;https://blockpg-aloe.safezone.mcafee.com&quot; epoch=&quot;1657763314&quot; /&gt;
+    &lt;div class=&quot;outer&quot;&gt;
+        &lt;div class=&quot;spinner&quot;&gt;
+                &lt;div class=&quot;bounce1&quot;&gt;&lt;/div&gt;
+                &lt;div class=&quot;bounce2&quot;&gt;&lt;/div&gt;
+                &lt;div class=&quot;bounce3&quot;&gt;&lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.8">
+      <div class="step-ref passed">8</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.9">
+      <div class="step-ref failed">9</div>
+      
+      <div class="step-cell failed">
+        <span>*</span>&nbsp;<span>def generatedtoken=response.token</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.9">21:48:35.880 src/test/resources/features/tokenverify.feature:9
+* def generatedtoken=response.token
+no step-definition method match found for: def generatedtoken=response.token
+src/test/resources/features/tokenverify.feature:9
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.10">
+      <div class="step-ref skipped">10</div>
+      
+      <div class="step-cell skipped">
+        <span>Given</span>&nbsp;<span>path &quot;/api/token/verify&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.11">
+      <div class="step-ref skipped">11</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>param username = &quot;supervisor&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.12">
+      <div class="step-ref skipped">12</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>param token = generatedtoken</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.13">
+      <div class="step-ref skipped">13</div>
+      
+      <div class="step-cell skipped">
+        <span>When</span>&nbsp;<span>method get</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.14">
+      <div class="step-ref skipped">14</div>
+      
+      <div class="step-cell skipped">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.15">
+      <div class="step-ref skipped">15</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
